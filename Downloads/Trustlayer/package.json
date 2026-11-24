@@ -1,15 +1,17 @@
 ﻿{
-  "name": "trustlayer",
-  "private": true,
-  "packageManager": "pnpm@9.12.0",
-  "workspaces": ["apps/*", "packages/*"],
-  "scripts": {
-    "dev": "pnpm -C apps/web dev",
-    "build": "pnpm -C apps/web build",
-    "lint": "pnpm -C apps/web lint",
-    "typecheck": "pnpm -C apps/web typecheck",
-    "test": "pnpm -r test",
-    "anchor:build": "cd programs/trustlayer_escrow && anchor build",
-    "anchor:test": "cd programs/trustlayer_escrow && anchor test"
-  }
+    "private":  true,
+    "workspaces":  [
+                       "apps/*",
+                       "packages/*"
+                   ],
+    "name":  "trustlayer",
+    "scripts":  {
+                    "anchor:test":  "cd programs/trustlayer_escrow \u0026\u0026 anchor test",
+                    "build":  "npm --prefix apps/web run build",
+                    "typecheck":  "npm --prefix apps/web run typecheck",
+                    "lint":  "npm --prefix apps/web run lint",
+                    "anchor:build":  "cd programs/trustlayer_escrow \u0026\u0026 anchor build",
+                    "dev":  "npm --prefix apps/web run dev",
+                    "test":  "npm --prefix apps/web run test"
+                }
 }
