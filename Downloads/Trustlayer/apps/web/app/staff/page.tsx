@@ -1,0 +1,1 @@
+﻿export default function StaffHome() { return <div className="trust-container py-10"><h1 className="text-2xl font-semibold">Staff (restricted)</h1><p className="mt-2 text-sm text-slate-600">Role-checked staff console. All actions must be server-validated.</p></div>; }

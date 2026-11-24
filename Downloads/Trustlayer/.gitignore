@@ -1,0 +1,14 @@
+﻿node_modules
+.pnpm-store
+.env
+.env.local
+.env.*.local
+dist
+build
+.next
+target
+.anchor
+.DS_Store
+*.log
+supabase/.branches
+supabase/.temp

@@ -1,0 +1,1 @@
+﻿export default function AppDisputesPage() { return <div className="trust-container py-10"><h1 className="text-2xl font-semibold">Disputes</h1><p className="mt-2 text-sm text-slate-600">Your disputes will appear here.</p></div>; }
